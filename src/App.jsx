@@ -2,13 +2,16 @@
 
 import { useEffect, useState } from "react"
 import "./App.css"
+import Cards from "./components/Cards"
+
+
+
 //import { Button } from "bootstrap"
  //import MyNavbar from "./component/Navbar"
  //import 'bootstrap/dist/css/bootstrap.min.css';
  //import MyCard from "./component/card";
 // import Body from "./component/Body";
  
-
 
 
 
@@ -36,17 +39,27 @@ import "./App.css"
 // ]
 
 
+// const App=()=>{
+//   const [count,setCount]=useState(0)
+// const add=()=>{
 
+//   setCount(count+1)
+// }
+// const getData=()=>{
+//   alert("call api")
+  
+// }
 
-const App=()=>{
+// useEffect(()=>{
+//   getData()
+// },[count])
+
   //  const [login,setlogin]=useState(2)
   // const [num,setNum]=useState(0)
   // const [nums,setNums]=useState(0)
-    useEffect(()=>{
+    
       // alert('Click this button')
-      console.log('click this btn')
-    })
-    console.log('click this b')
+      
   // const [count,setCount]=useState(0)
   // const add=()=>{
   //  setCount(count+1)
@@ -60,8 +73,13 @@ const App=()=>{
 //   </>
 // )
 
-  return(
-<>
+  // return(
+//<>
+{/* <h1>{count}</h1>
+<button onClick={add}>
+ADD
+
+</button> */}
 {/* 
   <button onClick={()=>{setNum(num+1)}}>{num}</button>
   <button onClick={()=>{setNums(nums+1)}}>{nums}</button> */}
@@ -98,8 +116,50 @@ const App=()=>{
   <MyCard/>
   <Body/> as
   <MyCard/>*/}
-  </>
+  // </>
 
-  )}
+  // )}
+
+const App=()=>{
+  return(
+   <div className="app">
+    <h1>Memory Game-React </h1>
+    
+     <Cards/>
+   </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   export default App
+
+
+
